@@ -3,8 +3,8 @@ package ru.stqa.pft.addressbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -90,5 +90,33 @@ public class TestBase {
 
   protected void selectGroup() {
     wd.findElement(By.name("selected[]")).click();
+  }
+
+  protected void returnToHomePage() {
+    wd.findElement(By.linkText("home page")).click();
+  }
+
+  protected void submitContactCreation() {
+    wd.findElement(By.name("submit")).click();
+  }
+
+  protected void fillContactForm(ContactData contactData) {
+    wd.findElement(By.name("firstname")).click();
+    wd.findElement(By.name("firstname")).sendKeys(contactData.getName());
+    wd.findElement(By.name("lastname")).click();
+    wd.findElement(By.name("lastname")).sendKeys(contactData.getSurName());
+    wd.findElement(By.name("address")).click();
+    wd.findElement(By.name("address")).sendKeys(contactData.getAddress());
+    wd.findElement(By.name("mobile")).click();
+    wd.findElement(By.name("mobile")).sendKeys(contactData.getPhone());
+    wd.findElement(By.name("email")).click();
+    wd.findElement(By.name("email")).sendKeys(contactData.getEmail());
+    new Select(wd.findElement(By.name("bday"))).selectByVisibleText(contactData.getDay());
+    new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(contactData.getMonth());
+    wd.findElement(By.name("byear")).sendKeys(contactData.getYear());
+  }
+
+  protected void initContactCreation() {
+    wd.findElement(By.linkText("add new")).click();
   }
 }
