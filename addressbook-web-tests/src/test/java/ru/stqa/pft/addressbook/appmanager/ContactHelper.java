@@ -8,47 +8,42 @@ import ru.stqa.pft.addressbook.model.ContactData;
 
 import static org.testng.Assert.assertTrue;
 
-public class ContactHelper {
+public class ContactHelper extends HelperBase{
 
-  private FirefoxDriver wd;
   private boolean acceptNextAlert = true;
 
   public ContactHelper(FirefoxDriver wd) {
-    this.wd = wd;
+    super(wd);
   }
 
   public void submitContactCreation() {
-    wd.findElement(By.name("submit")).click();
+    click(By.name("submit"));
   }
 
   public void fillContactForm(ContactData contactData) {
-    wd.findElement(By.name("firstname")).click();
-    wd.findElement(By.name("firstname")).sendKeys(contactData.getName());
-    wd.findElement(By.name("lastname")).click();
-    wd.findElement(By.name("lastname")).sendKeys(contactData.getSurName());
-    wd.findElement(By.name("address")).click();
-    wd.findElement(By.name("address")).sendKeys(contactData.getAddress());
-    wd.findElement(By.name("mobile")).click();
-    wd.findElement(By.name("mobile")).sendKeys(contactData.getPhone());
-    wd.findElement(By.name("email")).click();
-    wd.findElement(By.name("email")).sendKeys(contactData.getEmail());
+    type(By.name("firstname"), contactData.getName());
+    type(By.name("lastname"), contactData.getSurName());
+    type(By.name("address"), contactData.getAddress());
+    type(By.name("mobile"), contactData.getPhone());
+    type(By.name("email"), contactData.getEmail());
+
     new Select(wd.findElement(By.name("bday"))).selectByVisibleText(contactData.getDay());
     new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(contactData.getMonth());
     wd.findElement(By.name("byear")).sendKeys(contactData.getYear());
   }
 
   public void initContactCreation() {
-    wd.findElement(By.linkText("add new")).click();
+    click(By.linkText("add new"));
   }
 
   public void deleteSelectedContact() {
     acceptNextAlert = true;
-    wd.findElement(By.xpath("//input[@value='Delete']")).click();
+    click(By.xpath("//input[@value='Delete']"));
     assertTrue(closeAlertAndGetItsText().matches("^Delete 1 addresses[\\s\\S]$"));
   }
 
   public void selectContact() {
-    wd.findElement(By.name ("selected[]")).click();
+    click(By.name ("selected[]"));
   }
 
   public String closeAlertAndGetItsText() {
