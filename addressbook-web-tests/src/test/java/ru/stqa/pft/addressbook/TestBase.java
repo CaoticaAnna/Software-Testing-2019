@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
@@ -10,9 +11,11 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
+import static org.testng.Assert.assertTrue;
 
+public class TestBase {
   FirefoxDriver wd;
+  private boolean acceptNextAlert = true;
 
   @BeforeMethod(alwaysRun = true)
   public void setUp() throws Exception{
@@ -93,7 +96,7 @@ public class TestBase {
   }
 
   protected void returnToHomePage() {
-    wd.findElement(By.linkText("home page")).click();
+    wd.findElement(By.xpath("//*[@id=\"nav\"]/ul/li[1]/a")).click();
   }
 
   protected void submitContactCreation() {
@@ -118,5 +121,31 @@ public class TestBase {
 
   protected void initContactCreation() {
     wd.findElement(By.linkText("add new")).click();
+  }
+
+  protected void deleteSelectedContact() {
+    acceptNextAlert = true;
+    wd.findElement(By.xpath("//input[@value='Delete']")).click();
+    assertTrue(closeAlertAndGetItsText().matches("^Delete 1 addresses[\\s\\S]$"));
+  }
+
+
+  protected void selectContact() {
+    wd.findElement(By.name ("selected[]")).click();
+  }
+
+  protected String closeAlertAndGetItsText() {
+    try {
+      Alert alert = wd.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
   }
 }
