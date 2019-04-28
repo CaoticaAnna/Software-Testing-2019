@@ -1,10 +1,13 @@
 package ru.stqa.pft.addressbook.appmanager;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,11 +42,13 @@ public class ApplicationManager {
     sessionHelper.login("admin", "secret");
   }
 
+  public void sleep() throws InterruptedException {
+    Thread.sleep(1000);
+  }
 
   public void stop() {
     wd.quit();
   }
-
 
   public GroupHelper getGroupHelper() {
     return groupHelper;
