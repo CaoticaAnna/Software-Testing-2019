@@ -3,8 +3,8 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class ContactHelper extends HelperBase {
     //if (creation) {
     //select(By.name("new_group"), contactData.getGroup());
     //} else {
-    // Assert.assertFalse(isElementPresent(By.name("new_group")));
+     //Assert.assertFalse(isElementPresent(By.name("new_group")));
     //}
   }
 

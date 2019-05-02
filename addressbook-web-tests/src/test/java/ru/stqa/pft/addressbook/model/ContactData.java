@@ -15,7 +15,7 @@ public class ContactData {
   private String group;
 
   public ContactData(String surName, String name, String address, String phone, String email, String day, String month, String year, String group) {
-    this.id = 0;
+    this.id = Integer.MAX_VALUE;
     this.surName = surName;
     this.name = name;
     this.address = address;
@@ -40,7 +40,7 @@ public class ContactData {
   }
 
   public ContactData(String surName, String name) {
-    this.id = 0;
+    this.id = Integer.MAX_VALUE;
     this.surName = surName;
     this.name = name;
     this.address = null;
@@ -97,6 +97,20 @@ public class ContactData {
   }
 
   @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ContactData that = (ContactData) o;
+    return Objects.equals(surName, that.surName) &&
+            Objects.equals(name, that.name);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(surName, name);
+  }
+
+  @Override
   public String toString() {
     return "ContactData{" +
             "id='" + id + '\'' +
@@ -105,18 +119,4 @@ public class ContactData {
             '}';
   }
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    ContactData that = (ContactData) o;
-    return Objects.equals(id, that.id) &&
-            Objects.equals(surName, that.surName) &&
-            Objects.equals(name, that.name);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(id, surName, name);
-  }
 }

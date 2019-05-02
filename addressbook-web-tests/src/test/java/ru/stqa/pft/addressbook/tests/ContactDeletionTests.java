@@ -3,7 +3,6 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ContactData;
-
 import java.util.List;
 
 
@@ -22,9 +21,10 @@ public class ContactDeletionTests extends TestBase{
     app.getNavigationHelper().returnToHomePage();
     app.sleep();
     List<ContactData> after = app.getContactHelper().getContactList();
-    Assert.assertEquals(after.size(), before.size() - 1);
     app.sleep();
+    Assert.assertEquals(after.size(), before.size() - 1);
     before.remove(before.size() - 1);
+    app.sleep();
     Assert.assertEquals(before, after);
   }
 }
