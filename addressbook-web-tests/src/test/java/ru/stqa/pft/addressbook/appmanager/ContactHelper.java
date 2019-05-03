@@ -82,7 +82,6 @@ public class ContactHelper extends HelperBase {
         contacts.add(contact);
       }
     }
-    else {(new WebDriverWait(wd,60)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.name("entry")));}
       return contacts;
     }
   }

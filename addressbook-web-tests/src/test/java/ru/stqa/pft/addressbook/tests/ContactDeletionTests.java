@@ -14,17 +14,14 @@ public class ContactDeletionTests extends TestBase{
       app.getContactHelper().createContact(new ContactData("Guseva", "Anna", "Novosibirsk, Russkaya St. 23 - 28", "89059586512", "anyuta34@yandex.ru", "18", "August", "1987", "test1"), true);
     }
     app.getNavigationHelper().returnToHomePage();
-    app.sleep();
     List<ContactData> before = app.getContactHelper().getContactList();
     app.getContactHelper().selectContact(before.size() - 1);
     app.getContactHelper().deleteSelectedContact();
+    app.sleep();
     app.getNavigationHelper().returnToHomePage();
-    app.sleep();
     List<ContactData> after = app.getContactHelper().getContactList();
-    app.sleep();
     Assert.assertEquals(after.size(), before.size() - 1);
     before.remove(before.size() - 1);
-    app.sleep();
     Assert.assertEquals(before, after);
   }
 }
