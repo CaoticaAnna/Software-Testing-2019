@@ -8,20 +8,24 @@ import java.util.List;
 
 public class ContactDeletionTests extends TestBase{
 
+  @BeforeMethod
+  public void ensurePreconditions(){
+    if (app.contact().list().size() == 0){
+      app.contact().create(new ContactData().withSurName("Guseva").withName("Anna"),true);
+    }
+  }
+
   @Test
   public void testContactDeletion() throws InterruptedException {
-    if (!app.getContactHelper().isThereAContact()) {
-      app.getContactHelper().createContact(new ContactData("Guseva", "Anna", "Novosibirsk, Russkaya St. 23 - 28", "89059586512", "anyuta34@yandex.ru", "18", "August", "1987", "test1"), true);
-    }
-    app.getNavigationHelper().returnToHomePage();
-    List<ContactData> before = app.getContactHelper().getContactList();
-    app.getContactHelper().selectContact(before.size() - 1);
-    app.getContactHelper().deleteSelectedContact();
+    app.goTo().homePage();
+    List<ContactData> before = app.contact().list();
+    int index = before.size() - 1;
+    app.contact().delete(index);
     app.sleep();
-    app.getNavigationHelper().returnToHomePage();
-    List<ContactData> after = app.getContactHelper().getContactList();
+    app.goTo().homePage();
+    List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size() - 1);
-    before.remove(before.size() - 1);
+    before.remove(index);
     Assert.assertEquals(before, after);
   }
 }

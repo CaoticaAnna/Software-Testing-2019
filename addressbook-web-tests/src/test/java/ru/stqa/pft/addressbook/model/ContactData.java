@@ -3,57 +3,64 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class ContactData {
-  private int id;
-  private final String surName;
-  private final String name;
-  private final String address;
-  private final String phone;
-  private final String email;
-  private final String day;
-  private final String month;
-  private final String year;
+  private int id = Integer.MAX_VALUE;
+  private String surName;
+  private String name;
+  private String address;
+  private String phone;
+  private String email;
+  private String day;
+  private String month;
+  private String year;
   private String group;
 
-  public ContactData(String surName, String name, String address, String phone, String email, String day, String month, String year, String group) {
-    this.id = Integer.MAX_VALUE;
+  public ContactData withId(int id) {
+    this.id = id;
+    return this;
+  }
+  public ContactData withSurName(String surName) {
     this.surName = surName;
+    return this;
+  }
+
+  public ContactData withName(String name) {
     this.name = name;
+    return this;
+  }
+
+  public ContactData withAddress(String address) {
     this.address = address;
+    return this;
+  }
+
+  public ContactData withPhone(String phone) {
     this.phone = phone;
+    return this;
+  }
+
+  public ContactData withEmail(String email) {
     this.email = email;
+    return this;
+  }
+
+  public ContactData withDay(String day) {
     this.day = day;
+    return this;
+  }
+
+  public ContactData withMonth(String month) {
     this.month = month;
+    return this;
+  }
+
+  public ContactData withYear(String year) {
     this.year = year;
+    return this;
+  }
+
+  public ContactData withGroup(String group) {
     this.group = group;
-  }
-  public ContactData(int id, String surName, String name) {
-    this.id = id;
-    this.surName = surName;
-    this.name = name;
-    this.address = null;
-    this.phone = null;
-    this.email = null;
-    this.day = null;
-    this.month = null;
-    this.year = null;
-    this.group = null;
-  }
-
-  public ContactData(String surName, String name) {
-    this.id = Integer.MAX_VALUE;
-    this.surName = surName;
-    this.name = name;
-    this.address = null;
-    this.phone = null;
-    this.email = null;
-    this.day = null;
-    this.month = null;
-    this.year = null;
-    this.group = null;
-  }
-
-  public void setId(int id) {
-    this.id = id;
+    return this;
   }
 
   public int getId() {
