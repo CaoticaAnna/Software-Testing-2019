@@ -108,13 +108,14 @@ public class ContactData {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     ContactData that = (ContactData) o;
-    return Objects.equals(surName, that.surName) &&
+    return id == that.id &&
+            Objects.equals(surName, that.surName) &&
             Objects.equals(name, that.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(surName, name);
+    return Objects.hash(id, surName, name);
   }
 
   @Override
