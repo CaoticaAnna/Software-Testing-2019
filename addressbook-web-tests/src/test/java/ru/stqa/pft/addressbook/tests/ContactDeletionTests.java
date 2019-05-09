@@ -16,7 +16,7 @@ public class ContactDeletionTests extends TestBase{
     }
   }
 
-  @Test
+  @Test()
   public void testContactDeletion() throws InterruptedException {
     app.goTo().homePage();
     Contacts before = app.contact().all();
