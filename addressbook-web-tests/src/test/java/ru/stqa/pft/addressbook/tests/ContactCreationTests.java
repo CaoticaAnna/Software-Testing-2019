@@ -12,7 +12,7 @@ public class ContactCreationTests extends TestBase{
   @Test()
   public void testContactCreation() {
     Contacts before = app.contact().all();
-    ContactData contact = new ContactData().withSurName("Guseva").withName("Anna");
+    ContactData contact = new ContactData().withSurName("Guseva").withName("Anna").withHomePhone("+1234").withMobilePhone("+7(342)456").withWorkPhone("8-6-6-6");
     app.contact().create((contact),true);
     app.goTo().homePage();
     assertThat(app.contact().count(), equalTo(before.size() + 1));

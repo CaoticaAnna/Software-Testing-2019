@@ -19,9 +19,11 @@ public class ContactHelper extends HelperBase {
   public void fillContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getName());
     type(By.name("lastname"), contactData.getSurName());
-    // type(By.name("address"), contactData.getAddress());
-    //type(By.name("mobile"), contactData.getPhone());
-    //type(By.name("email"), contactData.getEmail());
+    type(By.name("mobile"), contactData.getMobilePhone());
+    type(By.name("home"), contactData.getHomePhone());
+    type(By.name("work"), contactData.getWorkPhone());
+    type(By.name("address"), contactData.getAddress());
+    type(By.name("email"), contactData.getEmail());
     // select(By.name("bday"), contactData.getDay());
     // select(By.name("bmonth"), contactData.getMonth());
     //type(By.name("byear"), contactData.getYear());
@@ -96,9 +98,9 @@ public class ContactHelper extends HelperBase {
         int id = Integer.parseInt(entries.get(0).findElement(By.tagName("input")).getAttribute("value"));
         String name = entries.get(2).getText();
         String surName = entries.get(1).getText();
-        String[] phones = entries.get(5).getText().split("\n");
+        String allPhones = entries.get(5).getText();
         contactCache.add(new ContactData().withId(id).withSurName(surName).withName(name)
-                .withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]));
+                .withAllPhones(allPhones));
       }
     }
       return contactCache;
