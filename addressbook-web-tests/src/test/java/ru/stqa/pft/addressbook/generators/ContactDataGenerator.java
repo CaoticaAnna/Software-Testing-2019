@@ -67,11 +67,10 @@ public class ContactDataGenerator {
 
     private List<ContactData> generateContacts(int count) {
       List<ContactData> contacts = new ArrayList<ContactData>();
-      File photo = new File("src/test/resources/stru.png");
       for (int i = 0; i < count; i++){
         contacts.add(new ContactData().withName(String.format("Anna %s", i))
         .withSurName(String.format("Guseva %s", i)).withHomePhone("+1234").withMobilePhone("+7(342)456").withWorkPhone("8-6-6-6")
-        .withAddress(String.format("Moscow, Lenina St. 51, kv. 12")).withPhoto(photo));
+        .withAddress(String.format("Moscow, Lenina St. 51, kv. 12")));
       }
       return contacts;
     }

@@ -28,7 +28,6 @@ public class ContactData {
   private String email2;
   private String email3;
   private String allEmails;
-  @Expose
   private File photo;
 
   public ContactData withPhoto(File photo) {
@@ -209,7 +208,6 @@ public class ContactData {
             ", homePhone='" + homePhone + '\'' +
             ", mobilePhone='" + mobilePhone + '\'' +
             ", workPhone='" + workPhone + '\'' +
-            ", photo=" + photo +
             '}';
   }
 }
