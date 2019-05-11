@@ -22,21 +22,5 @@
     "homePhone": "+1234",
     "mobilePhone": "+7(342)456",
     "workPhone": "8-6-6-6"
-  },
-  {
-    "surName": "Guseva 3",
-    "name": "Anna 3",
-    "address": "Moscow, Lenina St. 51, kv. 12",
-    "homePhone": "+1234",
-    "mobilePhone": "+7(342)456",
-    "workPhone": "8-6-6-6"
-  },
-  {
-    "surName": "Guseva 4",
-    "name": "Anna 4",
-    "address": "Moscow, Lenina St. 51, kv. 12",
-    "homePhone": "+1234",
-    "mobilePhone": "+7(342)456",
-    "workPhone": "8-6-6-6"
   }
 ]
