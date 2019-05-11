@@ -1,15 +1,23 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.solidfire.gson.annotations.Expose;
+
 import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
   private int id = Integer.MAX_VALUE;
+  @Expose
   private String surName;
+  @Expose
   private String name;
+  @Expose
   private String address;
+  @Expose
   private String homePhone;
+  @Expose
   private String mobilePhone;
+  @Expose
   private String workPhone;
   private String day;
   private String month;
@@ -20,6 +28,7 @@ public class ContactData {
   private String email2;
   private String email3;
   private String allEmails;
+  @Expose
   private File photo;
 
   public ContactData withPhoto(File photo) {
@@ -193,9 +202,14 @@ public class ContactData {
   @Override
   public String toString() {
     return "ContactData{" +
-            "id='" + id + '\'' +
+            "id=" + id +
             ", surName='" + surName + '\'' +
             ", name='" + name + '\'' +
+            ", address='" + address + '\'' +
+            ", homePhone='" + homePhone + '\'' +
+            ", mobilePhone='" + mobilePhone + '\'' +
+            ", workPhone='" + workPhone + '\'' +
+            ", photo=" + photo +
             '}';
   }
 }
