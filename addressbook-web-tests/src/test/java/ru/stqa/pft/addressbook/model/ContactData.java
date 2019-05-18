@@ -1,42 +1,89 @@
 package ru.stqa.pft.addressbook.model;
 
 import com.solidfire.gson.annotations.Expose;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
 import java.util.Objects;
 
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
+
+  @Id
+  @Column(name = "id")
   private int id = Integer.MAX_VALUE;
+
+  @Column(name = "lastname")
   @Expose
   private String surName;
+
+  @Column(name = "firstname")
   @Expose
   private String name;
+
   @Expose
+  @Column(name = "address")
+  @Type(type = "text")
   private String address;
+
+  @Column(name = "home")
+  @Type(type = "text")
   @Expose
   private String homePhone;
+
+  @Column(name = "mobile")
+  @Type(type = "text")
   @Expose
   private String mobilePhone;
+
+  @Column(name = "work")
+  @Type(type = "text")
   @Expose
   private String workPhone;
+
+  @Column(name = "bday", columnDefinition = "TINYINT(2)")
   private String day;
+
+  @Column(name = "bmonth")
   private String month;
+
+  @Column(name = "byear")
   private String year;
+
+  @Transient
   private String group;
+
+  @Transient
   private String allPhones;
+
+  @Column(name = "email")
+  @Type(type = "text")
   private String email;
+
+  @Column(name = "email2")
+  @Type(type = "text")
   private String email2;
+
+  @Column(name = "email3")
+  @Type(type = "text")
   private String email3;
+
+  @Transient
   private String allEmails;
-  private File photo;
+
+  @Column(name = "photo")
+  @Type(type = "text")
+  private String photo;
 
   public ContactData withPhoto(File photo) {
-    this.photo = photo;
+    this.photo = photo.getPath();
     return this;
   }
 
   public File getPhoto() {
-    return photo;
+    return new File (photo);
   }
 
   public ContactData withId(int id) {
@@ -190,12 +237,16 @@ public class ContactData {
     ContactData that = (ContactData) o;
     return id == that.id &&
             Objects.equals(surName, that.surName) &&
-            Objects.equals(name, that.name);
+            Objects.equals(name, that.name) &&
+            Objects.equals(address, that.address) &&
+            Objects.equals(homePhone, that.homePhone) &&
+            Objects.equals(mobilePhone, that.mobilePhone) &&
+            Objects.equals(workPhone, that.workPhone);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, surName, name);
+    return Objects.hash(id, surName, name, address, homePhone, mobilePhone, workPhone);
   }
 
   @Override
@@ -210,4 +261,5 @@ public class ContactData {
             ", workPhone='" + workPhone + '\'' +
             '}';
   }
+
 }
