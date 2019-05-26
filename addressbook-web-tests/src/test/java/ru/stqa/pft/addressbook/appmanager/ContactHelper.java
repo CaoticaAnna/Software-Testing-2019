@@ -1,8 +1,11 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
 import java.util.List;
 
 
@@ -28,16 +31,34 @@ public class ContactHelper extends HelperBase {
     // select(By.name("bday"), contactData.getDay());
     // select(By.name("bmonth"), contactData.getMonth());
     //type(By.name("byear"), contactData.getYear());
-    //if (creation) {
-    //select(By.name("new_group"), contactData.getGroup());
-    //} else {
-    //Assert.assertFalse(isElementPresent(By.name("new_group")));
-    //}
+  }
+
+  public void fillContactFormWithGroup(ContactData contactData, boolean creation) {
+    type(By.name("firstname"), contactData.getName());
+    type(By.name("lastname"), contactData.getSurName());
+    type(By.name("mobile"), contactData.getMobilePhone());
+    type(By.name("home"), contactData.getHomePhone());
+    type(By.name("work"), contactData.getWorkPhone());
+    type(By.name("address"), contactData.getAddress());
+    type(By.name("email"), contactData.getEmail());
+    //attach(By.name("photo"), contactData.getPhoto());
+    // select(By.name("bday"), contactData.getDay());
+    // select(By.name("bmonth"), contactData.getMonth());
+    //type(By.name("byear"), contactData.getYear());
+    if (creation) {
+      if (contactData.getGroups().size() > 0) {
+        Assert.assertTrue(contactData.getGroups().size() == 1);
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+      } else {
+        Assert.assertFalse(isElementPresent(By.name("new_group")));
+      }
+    }
   }
 
   public void initContactCreation() {
     click(By.linkText("add new"));
   }
+
 
   public void selectContactById(int id) {
     wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
@@ -55,6 +76,16 @@ public class ContactHelper extends HelperBase {
     selectContactById(contact.getId());
     deleteSelectedContact();
     contactCache = null;
+  }
+
+  public void selectGroupById(int id){
+    new Select(wd.findElement(By.name("to_group"))).selectByValue(String.valueOf(id));
+  }
+
+  public void addToGroup(ContactData contact, GroupData groups){
+    selectContactById(contact.getId());
+    selectGroupById(groups.getId());
+    click(By.name("add"));
   }
 
   public void deleteSelectedContact() {
@@ -77,6 +108,13 @@ public class ContactHelper extends HelperBase {
   public void create(ContactData contact, boolean b) {
     initContactCreation();
     fillContactForm(contact, b);
+    submitContactCreation();
+    contactCache = null;
+  }
+
+  public void createWithGroup(ContactData contact, boolean b) {
+    initContactCreation();
+    fillContactFormWithGroup(contact, b);
     submitContactCreation();
     contactCache = null;
   }
