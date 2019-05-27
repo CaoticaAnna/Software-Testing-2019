@@ -5,6 +5,10 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactDeletingFromGroupTest extends TestBase{
 
@@ -21,10 +25,33 @@ public class ContactDeletingFromGroupTest extends TestBase{
   }
 
   @Test()
-  public void testContactDeletingFromGroup() throws InterruptedException {
-    Contacts before = app.db().contacts();
+  public void testContactDeletingFromGroup() {
+    app.goTo().homePage();
+    Contacts contacts = app.db().contacts();
+    ContactData chosenContact = contacts.iterator().next();
+    int contactId = chosenContact.getId();
+    Groups before = chosenContact.getGroups();
+    if(before.size() == 0){
+      GroupData chosenGroup = app.db().groups().iterator().next();
+      app.contact().addToGroup(chosenContact, chosenGroup);
+      app.goTo().homePage();
+      ContactData contactInGroup = chosenContact.inGroup(chosenGroup).withId(contactId);
+      Groups beforeAction = contactInGroup.getGroups();
+      GroupData addedGroup = beforeAction.iterator().next();
+      app.contact().deleteFromGroup(contactInGroup, addedGroup);
+      ContactData afterContact = contactInGroup.outOfGroup(addedGroup).withId(contactId);
+      Groups after = afterContact.getGroups();
+      assertThat(after, equalTo(
+              beforeAction.without(addedGroup)));
+    }
+    else{
+    GroupData chosenGroup = before.iterator().next();
+    app.contact().deleteFromGroup(chosenContact, chosenGroup);
+    ContactData afterContact = chosenContact.outOfGroup(chosenGroup).withId(contactId);
+    Groups after = afterContact.getGroups();
+    assertThat(after, equalTo(
+            before.without(chosenGroup)));}
     app.goTo().homePage();
     verifyContactListUi();
   }
-
 }

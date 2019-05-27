@@ -91,6 +91,11 @@ public class ContactData {
     return this;
   }
 
+  public ContactData outOfGroup(GroupData group) {
+    groups.remove(group);
+    return this;
+  }
+
   public File getPhoto() {
     return new File (photo);
   }

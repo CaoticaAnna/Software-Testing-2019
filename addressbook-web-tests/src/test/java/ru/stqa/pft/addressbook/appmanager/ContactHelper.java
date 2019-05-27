@@ -78,14 +78,23 @@ public class ContactHelper extends HelperBase {
     contactCache = null;
   }
 
-  public void selectGroupById(int id){
+  public void selectToGroupById(int id){
     new Select(wd.findElement(By.name("to_group"))).selectByValue(String.valueOf(id));
+  }
+  public void selectGroupById(int id){
+    new Select(wd.findElement(By.name("group"))).selectByValue(String.valueOf(id));
   }
 
   public void addToGroup(ContactData contact, GroupData groups){
+    selectToGroupById(groups.getId());
     selectContactById(contact.getId());
-    selectGroupById(groups.getId());
     click(By.name("add"));
+  }
+
+  public void deleteFromGroup(ContactData contact, GroupData groups){
+    selectGroupById(groups.getId());
+    selectContactById(contact.getId());
+    click(By.name("remove"));
   }
 
   public void deleteSelectedContact() {

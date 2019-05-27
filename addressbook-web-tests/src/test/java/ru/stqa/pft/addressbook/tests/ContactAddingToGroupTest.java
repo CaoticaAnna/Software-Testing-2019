@@ -25,31 +25,43 @@ public class ContactAddingToGroupTest extends TestBase{
   }
 
   @Test()
-  public void testContactAddingToGroup(){
+  public void testContactAddingToGroup() {
+    app.goTo().homePage();
     Contacts contacts = app.db().contacts();
     Groups groups = app.db().groups();
     ContactData chosenContact = contacts.iterator().next();
     int contactId = chosenContact.getId();
     GroupData chosenGroup = groups.iterator().next();
-    chosenGroup.getId();
     Groups before = chosenContact.getGroups();
-    if(before.size() != 0){
+    if(before.size() == groups.size()){
+      app.goTo().groupPage();
+      app.group().create(new GroupData().withName("test1"));
+      Groups newGroups = app.db().groups();
+      newGroups.removeAll(before);
+      GroupData newGroup = newGroups.iterator().next();
+      app.goTo().homePage();
+      app.contact().addToGroup(chosenContact, newGroup);
+      ContactData newContact = chosenContact.inGroup(newGroup).withId(contactId);
+      Groups afterAction = newContact.getGroups();
+      assertThat(afterAction, equalTo(
+            before.withAdded(newGroup)));}
+    else if(before.size() != 0){
     groups.removeAll(before);
     GroupData filteredGroup = groups.iterator().next();
     app.contact().addToGroup(chosenContact, filteredGroup);
-    app.goTo().homePage();
     ContactData afterContact = chosenContact.inGroup(filteredGroup).withId(contactId);
     Groups after = afterContact.getGroups();
     assertThat(after, equalTo(
               before.withAdded(filteredGroup)));
-    } else{
+    }
+      else {
     app.contact().addToGroup(chosenContact, chosenGroup);
-    app.goTo().homePage();
     ContactData afterContact = chosenContact.inGroup(chosenGroup).withId(contactId);
     Groups after = afterContact.getGroups();
     assertThat(after, equalTo(
               before.withAdded(chosenGroup)));
     }
+    app.goTo().homePage();
     verifyContactListUi();
   }
 }
