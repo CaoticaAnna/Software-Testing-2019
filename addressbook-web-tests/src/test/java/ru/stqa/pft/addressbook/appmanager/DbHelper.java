@@ -40,41 +40,6 @@ public class DbHelper {
     session.close();
     return new Contacts(result);
   }
-
-  public Contacts contactsWithGroups() {
-     Session session = sessionFactory.openSession();
-          session.beginTransaction();
-
-          List<ContactData> result = session.createQuery("from ContactData where deprecated = '0000-00-00'").list();
-          session.getTransaction().commit();
-          session.close();
-          for (ContactData contact : result) {
-           contact.getGroups();
-          }
-          return new Contacts(result);
-  }
 }
 
-//public Contacts all() {
-//    if (contactCache != null){
-//      return new Contacts(contactCache);
-//    }
-//    contactCache = new Contacts();
-//    List<WebElement> elements = wd.findElements(By.name("entry"));
-//    if (areElementsPresent(By.name("entry"))) {
-//      for (WebElement entry : elements) {
-//        List<WebElement> entries = entry.findElements(By.tagName("td"));
-//        int id = Integer.parseInt(entries.get(0).findElement(By.tagName("input")).getAttribute("value"));
-//        String name = entries.get(2).getText();
-//        String surName = entries.get(1).getText();
-//        String allPhones = entries.get(5).getText();
-//        String address = entries.get(3).getText();
-//        String email = entries.get(4).getText();
-//        contactCache.add(new ContactData().withId(id).withSurName(surName).withName(name)
-//                .withAllPhones(allPhones)
-//                .withAddress(address).withAllEmails(email));
-//      }
-//    }
-//      return contactCache;
-//    }
 
