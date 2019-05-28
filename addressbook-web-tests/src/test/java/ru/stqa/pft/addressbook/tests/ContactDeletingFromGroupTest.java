@@ -39,7 +39,7 @@ public class ContactDeletingFromGroupTest extends TestBase{
       Groups beforeAction = contactInGroup.getGroups();
       GroupData addedGroup = beforeAction.iterator().next();
       app.contact().deleteFromGroup(contactInGroup, addedGroup);
-      ContactData afterContact = contactInGroup.outOfGroup(addedGroup).withId(contactId);
+      ContactData afterContact = app.db().contacts().iterator().next().withId(contactId);
       Groups after = afterContact.getGroups();
       assertThat(after, equalTo(
               beforeAction.without(addedGroup)));
@@ -47,7 +47,7 @@ public class ContactDeletingFromGroupTest extends TestBase{
     else{
     GroupData chosenGroup = before.iterator().next();
     app.contact().deleteFromGroup(chosenContact, chosenGroup);
-    ContactData afterContact = chosenContact.outOfGroup(chosenGroup).withId(contactId);
+    ContactData afterContact = app.db().contacts().iterator().next().withId(contactId);
     Groups after = afterContact.getGroups();
     assertThat(after, equalTo(
             before.without(chosenGroup)));}
