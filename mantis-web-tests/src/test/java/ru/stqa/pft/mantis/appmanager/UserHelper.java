@@ -10,8 +10,7 @@ public class UserHelper extends HelperBase {
   }
 
   public void selectUserById(int id) {
-    wd.findElement(By.cssSelector(String.format("a[href='manage_user_edit_page.php?user_id=%s']", id)));
-
+    click(By.cssSelector(String.format("a[href='manage_user_edit_page.php?user_id=%s']", id)));
   }
 
   public void resetPwd(UserData user){

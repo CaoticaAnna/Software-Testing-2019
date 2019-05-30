@@ -25,20 +25,14 @@ public class ResetPasswordTest extends TestBase{
   public void resetPasswordTest() throws IOException, MessagingException {
     app.resetPwdHelper().loginAsAdmin();
     Users users = app.db().users();
-    UserData chosenUser = users.iterator().next();
-    int id = chosenUser.getId();
+    UserData chosenUser = users.stream().filter((u) -> u.getAccess_level().contains("25")).findFirst().get();
     String password = "pwd";
-    String al = chosenUser.getAccess_level();
     app.goTo().manageUsers();
-    if (al != "administrator") {
     app.userHelper().resetPwd(chosenUser);
     List<MailMessage> mailMessages = app.mail().waitForMail(1, 1000);
     String confirmationLink = findConfirmationLink(mailMessages, chosenUser.getEmail());
     app.registration().finish(confirmationLink, password);
-    assertTrue(app.newSession().login(chosenUser.getUsername(), password));}
-    else{
-
-    }
+    assertTrue(app.newSession().login(chosenUser.getUsername(), password));
   }
 
   private String findConfirmationLink(List<MailMessage> mailMessages, String email) {
