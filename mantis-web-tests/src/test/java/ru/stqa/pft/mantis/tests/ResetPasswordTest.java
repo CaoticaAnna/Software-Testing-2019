@@ -26,7 +26,7 @@ public class ResetPasswordTest extends TestBase{
     app.resetPwdHelper().loginAsAdmin();
     Users users = app.db().users();
     UserData chosenUser = users.stream().filter((u) -> u.getAccess_level().contains("25")).findFirst().get();
-    String password = "pwd";
+    String password = "123";
     app.goTo().manageUsers();
     app.userHelper().resetPwd(chosenUser);
     List<MailMessage> mailMessages = app.mail().waitForMail(1, 1000);
