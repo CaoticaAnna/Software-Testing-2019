@@ -39,6 +39,7 @@ public class ApplicationManager {
     dbHelper = new DbHelper();
   }
 
+
   public void sleep() throws InterruptedException {
     Thread.sleep(1000);
   }

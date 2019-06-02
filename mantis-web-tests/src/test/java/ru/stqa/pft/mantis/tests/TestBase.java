@@ -1,25 +1,13 @@
 package ru.stqa.pft.mantis.tests;
-
-import biz.futureware.mantis.rpc.soap.client.IssueData;
-import biz.futureware.mantis.rpc.soap.client.MantisConnectLocator;
-import biz.futureware.mantis.rpc.soap.client.MantisConnectPortType;
-import biz.futureware.mantis.rpc.soap.client.ObjectRef;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import ru.stqa.pft.mantis.appmanager.ApplicationManager;
-import ru.stqa.pft.mantis.model.Issue;
-import ru.stqa.pft.mantis.model.Project;
-
 import javax.xml.rpc.ServiceException;
-import java.io.File;
 import java.io.IOException;
-import java.math.BigInteger;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.rmi.RemoteException;
-import java.util.Set;
 
 
 public class TestBase {
@@ -40,9 +28,11 @@ public class TestBase {
   }
 
   public boolean isIssueOpen(int issueId) throws MalformedURLException, ServiceException, RemoteException {
-    MantisConnectPortType mc = new MantisConnectLocator().getMantisConnectPort(new URL(app.getProperty("mantis.connectUrl")));
-    IssueData issue = mc.mc_issue_get(app.getProperty("mantis.adminLogin"), app.getProperty("mantis.adminPassword"), BigInteger.valueOf(issueId));
-    return !issue.getStatus().getName().equals("resolved");
+    String status = app.soap().getStatus(issueId);
+    if (!status.equals("resolved")) {
+      return true;
+    }
+    return false;
   }
 
   public void skipIfNotFixed(int issueId) throws RemoteException, ServiceException, MalformedURLException {
