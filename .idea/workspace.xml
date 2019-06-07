@@ -74,7 +74,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -82,6 +82,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -121,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" />
@@ -172,6 +180,7 @@
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/RestHelper.java" />
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java" />
+        <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" />
       </list>
     </option>
   </component>
@@ -406,12 +415,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 15h 48m 36s.xml">
-      <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 15h 49m 30s.xml">
-      <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 16h 43m 07s.xml">
       <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
     </history-entry>
@@ -436,6 +439,12 @@
     <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 17h 01m 22s.xml">
       <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ru_stqa_pft_sandbox - 2019.06.07 at 15h 50m 56s.xml">
+      <configuration name="ru.stqa.pft.sandbox" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Anna__IdeaIC2019_1_system_temp-testng-customsuite_xml - 2019.06.07 at 15h 51m 34s.xml">
+      <configuration name="C:/Users/Anna/.IdeaIC2019.1/system/temp-testng-customsuite.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -447,9 +456,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="186" y="114" width="1546" height="926" extended-state="0" />
+    <frame x="186" y="114" width="1546" height="926" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.25572005" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.25572005" />
       <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.16577825" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -458,7 +468,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24242425" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4967462" weight="0.43702772" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4967462" visible="true" weight="0.6322418" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5214106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1229,16 +1239,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.3/b972b5dfd2db7d41d76a6fc5445852522a136e2e/httpcore-4.4.3-sources.jar!/org/apache/http/config/MessageConstraints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#2004#2005#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.3/b972b5dfd2db7d41d76a6fc5445852522a136e2e/httpcore-4.4.3-sources.jar!/org/apache/http/util/ByteArrayBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -1638,6 +1638,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
