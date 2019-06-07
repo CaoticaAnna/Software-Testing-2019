@@ -86,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="69" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="69" />
+            <state relative-caret-position="51">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding>
                 <element signature="e#727#732#0" expanded="true" />
               </folding>
@@ -176,8 +176,8 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml" />
       </list>
     </option>
   </component>
@@ -188,8 +188,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="755" />
-    <option name="y" value="135" />
+    <option name="x" value="489" />
+    <option name="y" value="131" />
     <option name="width" value="1546" />
     <option name="height" value="915" />
   </component>
@@ -477,7 +477,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="214" y="143" width="1546" height="917" extended-state="0" />
+    <frame x="755" y="135" width="1546" height="915" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.25572005" />
@@ -489,7 +489,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24242425" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4967462" visible="true" weight="0.6394904" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4967462" visible="true" weight="0.6411239" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5214106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1626,8 +1626,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="69" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="69" />
+        <state relative-caret-position="51">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="e#727#732#0" expanded="true" />
           </folding>
