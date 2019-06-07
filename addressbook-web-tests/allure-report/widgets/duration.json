@@ -1,0 +1,71 @@
+[ {
+  "uid" : "ca75aa5d26b02829",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 4'}]",
+  "time" : {
+    "start" : 1559916335308,
+    "stop" : 1559916337592,
+    "duration" : 2284
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eafb35773d634164",
+  "name" : "testGroupDeletion",
+  "time" : {
+    "start" : 1559916340134,
+    "stop" : 1559916341492,
+    "duration" : 1358
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "213e5c47944d7750",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 2'}]",
+  "time" : {
+    "start" : 1559916330999,
+    "stop" : 1559916333147,
+    "duration" : 2148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "afd0b7d536b425d3",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "time" : {
+    "start" : 1559916325529,
+    "stop" : 1559916328538,
+    "duration" : 3009
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5c9b0e1e7a3a01b",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 3'}]",
+  "time" : {
+    "start" : 1559916333150,
+    "stop" : 1559916335306,
+    "duration" : 2156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f68655bf4fce8b5f",
+  "name" : "testGroupModification",
+  "time" : {
+    "start" : 1559916337607,
+    "stop" : 1559916340120,
+    "duration" : 2513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e2e132a6b28cc8",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 1'}]",
+  "time" : {
+    "start" : 1559916328638,
+    "stop" : 1559916330997,
+    "duration" : 2359
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
