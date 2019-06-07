@@ -74,23 +74,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,23 +89,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/RestHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-196">
+            <state relative-caret-position="187">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-              <folding>
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,8 +170,8 @@
         <option value="$PROJECT_DIR$/mantis-web-tests/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java" />
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issues.java" />
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/RestHelper.java" />
-        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java" />
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java" />
       </list>
     </option>
   </component>
@@ -218,79 +193,45 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="appmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.RestTests.testCreateIssue">
+  <component name="RunManager" selected="TestNG.C:/Users/Anna/.IdeaIC2019.1/system/temp-testng-customsuite.xml">
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -347,18 +288,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTests.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rest-sample.test" />
+    <configuration name="C:/Users/Anna/.IdeaIC2019.1/system/temp-testng-customsuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.tests.RestAssuredTests" />
-      <option name="METHOD_NAME" value="testCreateIssue" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2019.1/system/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -418,17 +358,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoapTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-web-tests.test" />
+    <configuration name="ru.stqa.pft.sandbox" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -437,19 +376,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="TestNG.SoapTests" />
       <item itemvalue="TestNG.RestTests" />
       <item itemvalue="TestNG.RestTests.testCreateIssue" />
-      <item itemvalue="TestNG.RestAssuredTests.testCreateIssue" />
       <item itemvalue="TestNG.RestTests.testFindIssue" />
+      <item itemvalue="TestNG.ru.stqa.pft.sandbox" />
+      <item itemvalue="TestNG.C:/Users/Anna/.IdeaIC2019.1/system/temp-testng-customsuite.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Anna/.IdeaIC2019.1/system/temp-testng-customsuite.xml" />
+        <item itemvalue="TestNG.ru.stqa.pft.sandbox" />
         <item itemvalue="TestNG.RestTests.testCreateIssue" />
         <item itemvalue="TestNG.RestTests" />
         <item itemvalue="TestNG.RestTests.testFindIssue" />
-        <item itemvalue="TestNG.SoapTests" />
-        <item itemvalue="TestNG.RestAssuredTests.testCreateIssue" />
       </list>
     </recent_temporary>
   </component>
@@ -467,9 +406,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 15h 48m 16s.xml">
-      <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 15h 48m 36s.xml">
       <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
     </history-entry>
@@ -497,6 +433,9 @@
     <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 16h 49m 53s.xml">
       <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="RestTests_testCreateIssue - 2019.06.02 at 17h 01m 22s.xml">
+      <configuration name="RestTests.testCreateIssue" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,9 +448,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="186" y="114" width="1546" height="926" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.2523553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.25572005" />
       <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.16577825" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -520,7 +458,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24242425" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4967462" visible="true" weight="0.43702772" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4967462" weight="0.43702772" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5214106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1450,17 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="759" column="21" selection-start-line="759" selection-start-column="21" selection-end-line="759" selection-end-column="21" />
-          <folding>
-            <element signature="e#25077#25078#0" expanded="true" />
-            <element signature="e#25123#25124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestAssuredTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -1612,13 +1539,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issues.java" />
     <entry file="file://$PROJECT_DIR$/mantis-web-tests/src/test/java/ru/stqa/pft/mantis/model/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1658,6 +1579,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/fluent-hc/4.5.1/95db41125f63510ffc659cfeefea1d39572ee1f6/fluent-hc-4.5.1-sources.jar!/org/apache/http/client/fluent/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1669,23 +1611,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/RestHelper.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="135">
+          <caret line="760" selection-start-line="760" selection-end-line="760" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding>
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#25123#25124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1693,17 +1624,17 @@
     <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/RestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
