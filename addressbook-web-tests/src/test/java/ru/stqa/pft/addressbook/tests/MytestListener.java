@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
 import ru.yandex.qatools.allure.annotations.Attachment;
 
-public class MyTestListener implements ITestListener {
+public class MytestListener implements ITestListener {
   @Override
   public void onTestStart(ITestResult result) {
 
