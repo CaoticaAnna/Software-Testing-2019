@@ -1,12 +1,12 @@
 {
-  "uid" : "afd0b7d536b425d3",
+  "uid" : "b4d36ccf67e55fa4",
   "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
   "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
   "historyId" : "9b88c2b32655367a85b11f6d2f7e31ce",
   "time" : {
-    "start" : 1559916325529,
-    "stop" : 1559916328538,
-    "duration" : 3009
+    "start" : 1559922502296,
+    "stop" : 1559922505389,
+    "duration" : 3093
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -37,10 +37,18 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "a2612a75de38d49",
+      "status" : "passed",
+      "time" : {
+        "start" : 1559916325529,
+        "stop" : 1559916328538,
+        "duration" : 3009
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "afd0b7d536b425d3.json",
+  "source" : "b4d36ccf67e55fa4.json",
   "parameterValues" : [ ]
 }

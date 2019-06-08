@@ -1,5 +1,5 @@
 {
-  "uid" : "ca75aa5d26b02829",
+  "uid" : "1db0883f24534590",
   "name" : "testGroupCreation[GroupData{id='2147483647', name='test 4'}]",
   "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 4'}]",
   "historyId" : "7e689239f3bcb86f449569d599d8242",
@@ -33,14 +33,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ca75aa5d26b02829.json",
+  "source" : "1db0883f24534590.json",
   "parameterValues" : [ ]
 }

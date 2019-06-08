@@ -1,12 +1,12 @@
 {
-  "uid" : "4e2e132a6b28cc8",
-  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 1'}]",
-  "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 1'}]",
-  "historyId" : "ca4c97f4a6293714e71c36eafd459a3c",
+  "uid" : "6db63d879a6083d1",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 3'}]",
+  "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 3'}]",
+  "historyId" : "796fdf0f90b5f08f9324c7eeeb8b7d9f",
   "time" : {
-    "start" : 1559916328638,
-    "stop" : 1559916330997,
-    "duration" : 2359
+    "start" : 1559922510462,
+    "stop" : 1559922512933,
+    "duration" : 2471
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -23,7 +23,7 @@
     "value" : "Suite1"
   }, {
     "name" : "testMethod",
-    "value" : "testGroupCreation[GroupData{id='2147483647', name='test 1'}]"
+    "value" : "testGroupCreation[GroupData{id='2147483647', name='test 3'}]"
   }, {
     "name" : "package",
     "value" : "Suite1"
@@ -37,10 +37,18 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "2530f86a2410fa92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1559916333150,
+        "stop" : 1559916335306,
+        "duration" : 2156
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4e2e132a6b28cc8.json",
+  "source" : "6db63d879a6083d1.json",
   "parameterValues" : [ ]
 }
